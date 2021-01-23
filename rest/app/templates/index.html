@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<title> White Board </title>
+<style></style>
+
+<body>
+    <center style="margin-top:40;"><pre> Hi This site jast for using Rest API for Android app </pre></center>
+    <center><h2> "White Board" </h2></center>
+
+    <Left style="color : blue ">
+        <h1 margin-Left: 80><pre>  Posts </pre></h1>
+     </left>
+
+    <h3>
+        <b><pre>  Text Show Now Has :  </pre>
+            <center>
+                <pre >{{ post.last.Text }}</pre>
+            </center>
+        </b>
+    </h3>
+    <p>=========================================================</p>
+    
+
+    <h2 style="color : green"> <pre> UserName  // Time  //  Likes </pre> </h2>
+     
+     {% for i in post reversed %}
+         <h2>
+            <pre>{{ i.UserName }}  // {{ i.Time }}  //  {{i.Like}} </pre> 
+         </h2>
+     {% endfor %}
+
+
+    
+    
+
+</body>
+
+</html>
